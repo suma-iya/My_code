@@ -7,7 +7,6 @@ bool ok = true;
 set<string>s;
 void dfs(string par){
     vis[par] = 1;
-   // cout << par << '\n';
     for(auto ch : m[par]){
         if(!vis[ch]){
             dfs(ch);
